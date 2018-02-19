@@ -16,7 +16,7 @@ OptionParser.new do |opt|
   opt.on('--AGC num', 'AtCoder Grand Contest ver. num') {|v| options[:AGC] = v}
   opt.on('--ARC num', 'AtCoder Regular Contest ver. num') {|v| options[:ARC] = v}
   opt.on('-o name', '--other name', 'other contest name') {|v| options[:other] = v}
-  opt.on('-f files', '--file files', Array, 'create file count') {|v| options[:file] = v.to_i}
+  opt.on('-f files', '--file files', Array, 'create file count') {|v| options[:file] = v}
 
   opt.parse!(ARGV)
 end
